@@ -10,7 +10,7 @@ h1{
 nav{
     border: 12px;
     border-color: black;
-    box-shadow: 0 0 10px rgba(255, 236, 226, 0.6);;
+    box-shadow: 0 0 10px rgba(255, 236, 226, 0.6);
 }
 li a {
     display: block;
