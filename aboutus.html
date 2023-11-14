@@ -1,11 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About Us</title>
+    <style>
+        .container {
+            border: 16px solid #0042A4;
+            border-radius: 50%;
+            border-top: 16px solid #3775CF;
+            border-right: 16px solid #619BEE;
+            border-bottom: 16px solid #96BFF9;
+            border-left: 16px solid #C9E0FF;
+            width: 100px;
+            height: 100px;
+            -webkit-animation: spin 1.5s linear infinite;
+            animation: spin 1.5s linear infinite;
+          }
+          @-webkit-keyframes spin {
+            0% {
+              -webkit-transform: rotate(0deg);
+            }
+            100% {
+              -webkit-transform: rotate(360deg);
+            }
+          }
+          @keyframes spin {
+            0% {
+              transform: rotate(0deg);
+            }
+            100% {
+              transform: rotate(360deg);
+            }
+          }
+        /*div{
+            width: 100px;
+            height: 100px;
+            background: blue;
+            animation: forwards;
+            animation-name: wheel;
+            animation-iteration-count: 4;
+            animation-duration: 80s;
+            position: relative;
+            animation-timing-function: linear;
+            border-radius: 50px;
+        }
+        @keyframes wheel{
+            0%   {background-color:red; left:0px; top:0px;}
+            25%  {background-color:yellow; left:90%; top: 90%;}
+            50%  {background-color:blue; left:90%; top:90%;}
+            75%  {background-color:green; left:0%; top:90%;}
+            100% {background-color: aqua; left:0%; top:0%;}
+        }*/
+        body{
+            background-color: #6e8dbc;
+        }
+        #slide{
+            animation-name: slide;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+            background-color:#0042A4;
+            float:left;
+            animation: reverse;
+        }
+        @keyframes slide{
+            0% {background-color: #0042A4; left: 0px;top:0px}
+            100% {background-color: #0042A4; left:1}
+        }
+        p{
+            font-size: 40px;
+        }
+        #dec{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            box-sizing: content-box;
+            border-radius: 5px;
+            border: 2px solid black;
+            font-size: 25px;
+            word-wrap:normal;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-bottom: none;
+            margin-top: none;
+        }
+    </style> 
 </head>
-<body>
-    
+<body id="slide">
+    <br>
+    <center><div class="container"></div></center>
+    <center><Div class="info">
+        <p>Welcome!!</p><hr width="95%"><br>
+        <p id="dec">I am a dedicated and self-motivated 
+            B.Sc student with one year of 
+            practical experience in Python and 
+            SQL. My career objective is to secure
+            a position in a forward-thinking 
+            organization where I can apply and 
+            further develop my skills in data 
+            analysis and programming. I am 
+            passionate about leveraging data to 
+            drive informed decision-making and 
+            process optimization. I aspire to 
+            work in a collaborative and 
+            innovative environment that 
+            encourages continuous learning and 
+            growth. My goal is to contribute to 
+            projects that not only align with my 
+            technical abilities but also challenge 
+            me to expand my skill set, ultimately
+            making a meaningful impact on the 
+            organization's success.
+            </p1>
+    </Div></center>
 </body>
 </html>
