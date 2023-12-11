@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <title>About Us</title>
     <style>
-        .container {
+        /* .container {
             border: 16px solid #0042A4;
             border-radius: 50%;
             border-top: 16px solid #3775CF;
@@ -30,7 +30,7 @@
             100% {
               transform: rotate(360deg);
             }
-          }
+          } 
         /*div{
             width: 100px;
             height: 100px;
@@ -50,9 +50,6 @@
             75%  {background-color:green; left:0%; top:90%;}
             100% {background-color: aqua; left:0%; top:0%;}
         }*/
-        body{
-            background-color: #7592cb;
-        }
         /*#slide{
             animation-name: slide;
             animation-duration: 3s;
@@ -61,9 +58,13 @@
             float:left;
             animation: reverse;
         }*/
-        @keyframes slide{
+        /*@keyframes slide{
             0% {background-color: #0042A4; left: 0px;top:0px}
             100% {background-color: #0042A4; left:1}
+        }*/
+        
+        #slide{
+          background-color: #09368f;
         }
         p{
             font-size: 40px;
@@ -81,34 +82,57 @@
             margin-top: none;
             box-shadow: #ef9a9a;
         }
-    </style> 
-</head>
-<body id="slide">
+        .container{
+          width: 250px;
+          height: 250px;
+          background-image: url(https://nbcsports.brightspotcdn.com/dims4/default/130cc41/2147483647/strip/false/crop/2852x1604+0+0/resize/1486x836!/quality/90/?url=https%3A%2F%2Fnbc-sports-production-nbc-sports.s3.us-east-1.amazonaws.com%2Fbrightspot%2F81%2F98%2F98716be50d81f950066d28b6a172%2Fap-18171504576999-e1529544894138.jpg);
+          background-repeat: no-repeat;
+          background-position:center;
+          background-size: 440px;
+          border:2px solid black;
+          border-radius: 50%;
+          animation-name: ronaldo;
+          animation-duration: 4s;
+          animation-delay: 0s;
+          animation-iteration-count: infinite;
+          animation-fill-mode: forwards;
+        }
+        @keyframes ronaldo{
+              0%{
+                  transform: rotate(0deg);
+              }
+              100%{
+                  transform: rotate(360deg);
+              }
+        }
+    </style>
+  </head>
+  <body id="slide">
     <br>
     <center><div class="container"></div></center>
-    <center><Div class="info">
+    <center><div class="info">
         <p>Welcome!!</p><hr width="95%"><br>
-        <p id="dec">I am a dedicated and self-motivated 
-            B.Sc student with one year of 
-            practical experience in Python and 
-            SQL. My career objective is to secure
-            a position in a forward-thinking 
-            organization where I can apply and 
-            further develop my skills in data 
-            analysis and programming. I am 
-            passionate about leveraging data to 
-            drive informed decision-making and 
-            process optimization. I aspire to 
-            work in a collaborative and 
-            innovative environment that 
-            encourages continuous learning and 
-            growth. My goal is to contribute to 
-            projects that not only align with my 
-            technical abilities but also challenge 
-            me to expand my skill set, ultimately
-            making a meaningful impact on the 
-            organization's success.
-            </p1>
-    </Div></center>
-</body>
+        <p id="dec">I am a dedicated and self-motivated
+          B.Sc student with one year of
+          practical experience in Python and
+          SQL. My career objective is to secure
+          a position in a forward-thinking
+          organization where I can apply and
+          further develop my skills in data
+          analysis and programming. I am
+          passionate about leveraging data to
+          drive informed decision-making and
+          process optimization. I aspire to
+          work in a collaborative and
+          innovative environment that
+          encourages continuous learning and
+          growth. My goal is to contribute to
+          projects that not only align with my
+          technical abilities but also challenge
+          me to expand my skill set, ultimately
+          making a meaningful impact on the
+          organization's success.
+        </p1>
+      </div></center>
+  </body>
 </html>
