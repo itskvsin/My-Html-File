@@ -68,12 +68,12 @@
             max-width: 100vw;
             min-width: 60vw;
         }
-        label[for="genre"]{
+        .genre{
             display: block;
             max-height:20vh;
             font-size: 17px;
         }
-        label[for="genre"]:hover{
+        .genre:hover{
             cursor: pointer;
         }
         input[type="checkbox"]:hover{
@@ -85,6 +85,9 @@
             margin:10px;
             font-size: 17px;
             color:#ffffff;
+        }
+        textarea:focus{
+            color: black;
         }
         button{
             font-size:24px;
@@ -133,11 +136,11 @@
                 <fieldset>
                     <legend>Your Preferences:</legend>
                     <p>What type of anime GENRE you like:</p>
-                    <label for="genre"><input type="checkbox">Action</label>
-                    <label for="genre"><input type="checkbox">Isekai</label>
-                    <label for="genre"><input type="checkbox">School Life</label>
-                    <label for="genre"><input type="checkbox">Fantasy</label>
-                    <label for="genre"><input type="checkbox">Romance</label>
+                    <label class="genre" for="action"><input type="checkbox" id="action">Action</label>
+                    <label class="genre" for="isekai"><input type="checkbox" id="isekai">Isekai</label>
+                    <label class="genre" for="school_life"><input type="checkbox" id="school_life">School Life</label>
+                    <label class="genre" for="fantasy"><input type="checkbox" id="fantasy">Fantasy</label>
+                    <label class="genre" for="romance"><input type="checkbox" id="romance">Romance</label>
                 </fieldset>
             </div>
 
