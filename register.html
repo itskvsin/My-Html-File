@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration For Anime | Kevin's Web</title>
     <style>
-        
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+        *{
+            font-family: "lobster",sans-serif;
+        }
         body{
             
             background-image: linear-gradient(90deg,#9fbede,#5986b4 ,#3b6895 );   
@@ -51,11 +54,12 @@
             border-color: rgba(50, 50, 171, 0.404);
             background-color: rgba(50, 50, 171, 0.404);
             color: white;
-            transition: color 1s , border 1s;
+            transition: border 1s;
+            transition: background-image ease-in 6s  ;
         }
         input:hover,textarea:hover{
             border: 2px solid blue;
-            color: linear-gradient(90deg,#9fbede,#5986b4 ,#3b6895 );    
+            background-image: linear-gradient(90deg,#9fbede,#5986b4 ,#3b6895 );    
         }
         input[name="about"]{
             display: block;
@@ -75,23 +79,24 @@
             min-height: 10vh;
             margin:10px;
             font-size: 17px;
+            color:#ffffff;
         }
         button{
             font-size: 16px;
             margin-top:auto;
-            margin-bottom: auto;
+            margin-bottom: 10px;
             padding: 6px;
             width: 50vw;
             background-color: #3659ce;
             border: 2px solid #245f99;
             border-radius: 10px;
-            transition: background-color 2s ;
+            transition: background-image 1s ;
             transition: color 2s;
             cursor: pointer;
         }
         button:hover{
             color:white;
-            background-color: #00197e;
+            background-image: linear-gradient(90deg,#9fbede,#5986b4 ,#3b6895 );
             
         }
         button:active{
