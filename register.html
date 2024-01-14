@@ -24,10 +24,10 @@
             background-image: linear-gradient(90%,rgb(76, 76, 194) ,rgb(76, 76, 200));
             box-sizing: border-box;
             border-radius: 8px;
-            width:80vw;
-            height: 130vh;
+            width:70vw;
+            min-width:83vw;
             margin:  20px auto;
-            box-shadow: 6px 2px 15px 4px  rgba(54, 54, 145, 0.8);
+            box-shadow: 15px 18px 20px 10px  rgba(54, 54, 145, 0.8);
         }
         
         fieldset{
@@ -59,7 +59,7 @@
         }
         input[name="about"]{
             display: block;
-            margin:4px 10px;
+            margin:10px;
             padding: 10px;
             max-width: 100vw;
             min-width: 60vw;
@@ -72,8 +72,6 @@
         }
         textarea{
             min-width: 60vw;
-            max-width: 80vw;
-            max-height: 20vh;
             min-height: 10vh;
             margin:10px;
             font-size: 17px;
@@ -111,8 +109,8 @@
     <main>
         <form action="html.html">
 
-            <div class="about">
-                <fieldset>
+            <div >
+                <fieldset class="about">
                     <legend>About You:</legend>
                     <label for="name">Name:<input type="text" id="name" name="about" placeholder="Enter your name" required></label>
                     <label for="age">Age: <input type="number" id="age" name="about" placeholder="Enter Your Age" required></label>
