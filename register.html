@@ -7,6 +7,7 @@
     <style>
         
         body{
+            
             background-image: linear-gradient(90deg,#9fbede,#5986b4 ,#3b6895 );   
         }
         h1{
@@ -17,18 +18,18 @@
             font-size: 18px;
         }
         main{
-            
+            display: flex;
+            align-items: center;
+            justify-content: center;
             background-image: linear-gradient(90%,rgb(76, 76, 194) ,rgb(76, 76, 200));
             box-sizing: border-box;
             border-radius: 8px;
             width:80vw;
-            height: 126vh;
+            height: 130vh;
             margin:  20px auto;
             box-shadow: 6px 2px 15px 4px  rgba(54, 54, 145, 0.8);
         }
-        form{
-           padding: 8px 10px 10px 10px;
-        }
+        
         fieldset{
             text-shadow: 2px 1px 2px #245f99;
             font-size: 16px;
@@ -79,14 +80,16 @@
         }
         button{
             font-size: 16px;
-            margin-top:-11px;
+            margin-top:auto;
+            margin-bottom: auto;
             padding: 6px;
             width: 50vw;
             background-color: #3659ce;
-           border: 2px solid #245f99;
-           border-radius: 10px;
-           transition: background-color 2s ;
-           transition: color 2s;
+            border: 2px solid #245f99;
+            border-radius: 10px;
+            transition: background-color 2s ;
+            transition: color 2s;
+            cursor: pointer;
         }
         button:hover{
             color:white;
@@ -106,7 +109,8 @@
     </header>
     
     <main>
-        <form action="">
+        <form action="html.html">
+
             <div class="about">
                 <fieldset>
                     <legend>About You:</legend>
@@ -116,6 +120,7 @@
                     <label for="contact">Contact No: <input type="tel" id="contact"name="about" pattern="[0-9]{10}" placeholder="Enter Your Number" required ></label>
                 </fieldset>    
             </div>
+
             <div class="prefer">
                 <fieldset>
                     <legend>Your Preferences:</legend>
@@ -127,15 +132,17 @@
                     <label for="genre"><input type="checkbox">Romance</label>
                 </fieldset>
             </div>
+
             <div class="review">
-                
                 <fieldset>
                     <legend>Comments:</legend>
                     <p>Enter Your Reviews About This Website Here:</p>
                     <textarea name="comment" id="comment"  placeholder="Enter Your Reviews About The Website Here:"></textarea>
                 </fieldset>
             </div>
+
             <center><button>Submit</button></center>
+
         </form>
     </main>
     <!-- <audio src="aurarian_dance.mp3" autoplay loop > </audio> -->
