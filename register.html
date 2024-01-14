@@ -3,9 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registration For Anime | Kevin's Web</title>
+    <style>
+        
+        body{
+            background-image: linear-gradient(90deg,#9fbede,#5986b4 ,#3b6895 );   
+        }
+        h1{
+            text-align: center;
+        }
+        p{
+            text-shadow: 2px 1px 2px #245f99;
+            font-size: 18px;
+        }
+        main{
+            
+            background-image: linear-gradient(90%,rgb(76, 76, 194) ,rgb(76, 76, 200));
+            box-sizing: border-box;
+            border-radius: 8px;
+            width:80vw;
+            height: 126vh;
+            margin:  20px auto;
+            box-shadow: 6px 2px 15px 4px  rgba(54, 54, 145, 0.8);
+        }
+        form{
+           padding: 8px 10px 10px 10px;
+        }
+        fieldset{
+            text-shadow: 2px 1px 2px #245f99;
+            font-size: 16px;
+            border: 4px solid lightblue;
+            border-radius: 8px;
+            margin: 20px 0px;
+            padding: 8px 0px;
+            transition: border-color 1s;
+        }
+        fieldset:hover{
+            border-color: #3b6895;
+        }
+        label{
+            padding: 4px;
+            margin: 2px 0px;
+        }
+        input,textarea{
+            border-radius: 8px;
+            border-color: rgba(50, 50, 171, 0.404);
+            background-color: rgba(50, 50, 171, 0.404);
+            color: white;
+            transition: color 1s , border 1s;
+        }
+        input:hover,textarea:hover{
+            border: 2px solid blue;
+            color: linear-gradient(90deg,#9fbede,#5986b4 ,#3b6895 );    
+        }
+        input[name="about"]{
+            display: block;
+            margin:4px 10px;
+            padding: 10px;
+            max-width: 100vw;
+            min-width: 60vw;
+        }
+        label[for="genre"]{
+            display: block;
+            max-height:20vh;
+            font-size: 17px;
+            cursor: pointer;
+        }
+        textarea{
+            min-width: 60vw;
+            max-width: 80vw;
+            max-height: 20vh;
+            min-height: 10vh;
+            margin:10px;
+            font-size: 17px;
+        }
+        button{
+            font-size: 16px;
+            margin-top:-11px;
+            padding: 6px;
+            width: 50vw;
+            background-color: #3659ce;
+           border: 2px solid #245f99;
+           border-radius: 10px;
+           transition: background-color 2s ;
+           transition: color 2s;
+        }
+        button:hover{
+            color:white;
+            background-color: #00197e;
+            
+        }
+        button:active{
+            background-color: #3d64fa;
+            color:blue;
+        }
+    </style>
 </head>
 <body>
+
+    <header>
+        <h1>Welcome To Anime Registration Page</h1>
+    </header>
     
+    <main>
+        <form action="">
+            <div class="about">
+                <fieldset>
+                    <legend>About You:</legend>
+                    <label for="name">Name:<input type="text" id="name" name="about" placeholder="Enter your name" required></label>
+                    <label for="age">Age: <input type="number" id="age" name="about" placeholder="Enter Your Age" required></label>
+                    <label for="email">Email: <input type="email" id="email" name="about" placeholder="Enter your Email" required></label>
+                    <label for="contact">Contact No: <input type="tel" id="contact"name="about" pattern="[0-9]{10}" placeholder="Enter Your Number" required ></label>
+                </fieldset>    
+            </div>
+            <div class="prefer">
+                <fieldset>
+                    <legend>Your Preferences:</legend>
+                    <p>What type of anime GENRE you like:</p>
+                    <label for="genre"><input type="checkbox">Action</label>
+                    <label for="genre"><input type="checkbox">Isekai</label>
+                    <label for="genre"><input type="checkbox">School Life</label>
+                    <label for="genre"><input type="checkbox">Fantasy</label>
+                    <label for="genre"><input type="checkbox">Romance</label>
+                </fieldset>
+            </div>
+            <div class="review">
+                
+                <fieldset>
+                    <legend>Comments:</legend>
+                    <p>Enter Your Reviews About This Website Here:</p>
+                    <textarea name="comment" id="comment"  placeholder="Enter Your Reviews About The Website Here:"></textarea>
+                </fieldset>
+            </div>
+            <center><button>Submit</button></center>
+        </form>
+    </main>
+    <!-- <audio src="aurarian_dance.mp3" autoplay loop > </audio> -->
 </body>
 </html>
+<!-- border:4px solid rgba(80, 80, 203,0.4); -->
+<!-- background-color: rgba(80, 80, 203,0.8); -->
+<!-- 
+    background-position: top center ;
+            background-repeat: no-repeat;
+            background-size: 100%; 
+ -->
+ <!-- cols="40" maxlength="100" minlength="30" rows="6" -->
+ <!-- margin-left:50px; -->
+ <!--  -->
