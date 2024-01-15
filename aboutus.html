@@ -1,138 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>About Us</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Kevin's Info</title>
     <style>
-        /* .container {
-            border: 16px solid #0042A4;
-            border-radius: 50%;
-            border-top: 16px solid #3775CF;
-            border-right: 16px solid #619BEE;
-            border-bottom: 16px solid #96BFF9;
-            border-left: 16px solid #C9E0FF;
-            width: 100px;
-            height: 100px;
-            -webkit-animation: spin 1.5s linear infinite;
-            animation: spin 1.5s linear infinite;
-          }
-          @-webkit-keyframes spin {
-            0% {
-              -webkit-transform: rotate(0deg);
-            }
-            100% {
-              -webkit-transform: rotate(360deg);
-            }
-          }
-          @keyframes spin {
-            0% {
-              transform: rotate(0deg);
-            }
-            100% {
-              transform: rotate(360deg);
-            }
-          } 
-        /*div{
-            width: 100px;
-            height: 100px;
-            background: blue;
-            animation: forwards;
-            animation-name: wheel;
-            animation-iteration-count: 4;
-            animation-duration: 80s;
-            position: relative;
-            animation-timing-function: linear;
-            border-radius: 50px;
-        }
-        @keyframes wheel{
-            0%   {background-color:red; left:0px; top:0px;}
-            25%  {background-color:yellow; left:90%; top: 90%;}
-            50%  {background-color:blue; left:90%; top:90%;}
-            75%  {background-color:green; left:0%; top:90%;}
-            100% {background-color: aqua; left:0%; top:0%;}
-        }*/
-        /*#slide{
-            animation-name: slide;
-            animation-duration: 3s;
-            animation-iteration-count: 1;
-            background-color:#0042A4;
-            float:left;
-            animation: reverse;
-        }*/
-        /*@keyframes slide{
-            0% {background-color: #0042A4; left: 0px;top:0px}
-            100% {background-color: #0042A4; left:1}
-        }*/
-        
-        #slide{
-          background-color: #09368f;
-        }
-        p{
-            font-size: 40px;
-        }
-        #dec{
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            box-sizing: content-box;
-            border-radius: 5px;
-            border: 2px solid black;
-            font-size: 25px;
-            word-wrap:normal;
-            margin-left: 10%;
-            margin-right: 10%;
-            margin-bottom: none;
-            margin-top: none;
-            box-shadow: #ef9a9a;
-        }
-        .container{
-          width: 250px;
-          height: 250px;
-          background-image: url(https://nbcsports.brightspotcdn.com/dims4/default/130cc41/2147483647/strip/false/crop/2852x1604+0+0/resize/1486x836!/quality/90/?url=https%3A%2F%2Fnbc-sports-production-nbc-sports.s3.us-east-1.amazonaws.com%2Fbrightspot%2F81%2F98%2F98716be50d81f950066d28b6a172%2Fap-18171504576999-e1529544894138.jpg);
-          background-repeat: no-repeat;
-          background-position:center;
-          background-size: 440px;
-          border:2px solid black;
-          border-radius: 50%;
-          animation-name: ronaldo;
-          animation-duration: 4s;
-          animation-delay: 0s;
-          animation-iteration-count: infinite;
-          animation-fill-mode: forwards;
-        }
-        @keyframes ronaldo{
-              0%{
-                  transform: rotate(0deg);
-              }
-              100%{
-                  transform: rotate(360deg);
-              }
-        }
-    </style>
+    @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+    *{
+      margin:0;
+      padding: 0;
+      font-family: lobster,'Times New Roman', Times, serif;
+    }
+    body{
+      background-image: linear-gradient(90deg,rgb(156, 156, 222),rgb(63, 63, 186));
+    }
+    h1{
+      text-align: center;
+    }
+    hr{
+      color: white;
+      width: 60%;
+      margin: auto;
+    }
+    .container .content{
+      box-shadow: 2px 3px 10px 2px rgb(49, 41, 154);
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      gap: 8px;
+      padding: 8px;
+      margin: 14px;
+      border: 2px solid white;
+      border-radius: 10px;
+      margin-bottom: 40px;
+    }
+    li{
+      list-style-type: none;
+    }
+    li a{
+      padding: 8px;
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+    }
+    li a:hover{
+      color:blue;
+      background-color: white;
+      border-radius: 8px;
+    }
+    .myself .content1{
+      background-image: linear-gradient(90deg,rgb(99, 99, 160),rgb(30, 30, 140));
+      box-shadow: 8px 7px 6px 4px rgb(53, 46, 151);
+      margin: auto;
+      width: 80vw;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      gap:30px;
+      padding: 28px;
+      border: 2px solid white;
+      border-radius: 10px;
+    }
+    .myself .content1 img{
+      border: 1px solid white;
+      border-radius: 8px;
+      width: 350px;
+    }
+    .myself .content1 .hello h2{
+      color: white;
+      margin: 8px;
+    } 
+    .myself .content1 .hello p{
+      color: rgb(211, 211, 212);
+      font-size: 22px;
+      margin-left:10px ;
+    }
+    .myself .content1 .hello .email{
+      color: azure;
+      font-size: 20px;
+      margin:10px
+    }
+  </style>
   </head>
-  <body id="slide">
+  <body>
+
+    <!-- Navigation Bar -->
+    <nav class="container">
+      <ul class="content">
+        <li><a href="html.html">Home</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+        <li><a href="aboutus.html">About us</a></li>
+        <li><a href="register.html">Register</a></li>
+      </ul>
+    </nav>
+
+    
+    <h1>About</h1>
+    <hr>
     <br>
-    <center><div class="container"></div></center>
-    <center><div class="info">
-        <p>Welcome!!</p><hr width="95%"><br>
-        <p id="dec">I am a dedicated and self-motivated
-          B.Sc student with one year of
-          practical experience in Python and
-          SQL. My career objective is to secure
-          a position in a forward-thinking
-          organization where I can apply and
-          further develop my skills in data
-          analysis and programming. I am
-          passionate about leveraging data to
-          drive informed decision-making and
-          process optimization. I aspire to
-          work in a collaborative and
-          innovative environment that
-          encourages continuous learning and
-          growth. My goal is to contribute to
-          projects that not only align with my
-          technical abilities but also challenge
-          me to expand my skill set, ultimately
-          making a meaningful impact on the
-          organization's success.
-        </p1>
-      </div></center>
+    <!-- About myself -->
+    <div class="myself">
+      <div class="content1">
+
+        <img src="kevin_pro.jpg" alt="Kevin's Image">
+
+        <div class="hello">
+          <h2>HELLO , I AM KEVIN</h2>
+          <p> I am a dedicated and self-motivated
+            B.Sc student with one year of
+            practical experience in Python and
+            SQL. My career objective is to secure
+            a position in a forward-thinking
+            organization where I can apply and
+            further develop my skills in data
+            analysis and programming. I am
+            passionate about leveraging data to
+            drive informed decision-making and
+            process optimization. I aspire to
+            work in a collaborative and
+            innovative environment that
+            encourages continuous learning and
+            growth. My goal is to contribute to
+            projects that not only align with my
+            technical abilities but also challenge
+            me to expand my skill set, ultimately
+            making a meaningful impact on the
+            organization's success.
+          </p>
+          <p class="email">My Email: kevinsolankissg@gmail.com</p>
+        </div>
+
+      </div>
+    </div>
   </body>
 </html>
+
+<!-- 
+.content1{
+  box-sizing: border-box;
+  margin: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+  border-radius: 18px;
+  width: 80vw;
+  overflow-y:hidden;
+} -->
+
+<!-- <center><div class="info">
+  <p>Welcome!!</p><hr width="95%"><br>
+  <p id="dec">I am a dedicated and self-motivated
+    B.Sc student with one year of
+    practical experience in Python and
+    SQL. My career objective is to secure
+    a position in a forward-thinking
+    organization where I can apply and
+    further develop my skills in data
+    analysis and programming. I am
+    passionate about leveraging data to
+    drive informed decision-making and
+    process optimization. I aspire to
+    work in a collaborative and
+    innovative environment that
+    encourages continuous learning and
+    growth. My goal is to contribute to
+    projects that not only align with my
+    technical abilities but also challenge
+    me to expand my skill set, ultimately
+    making a meaningful impact on the
+    organization's success.
+  </p1>
+</div></center> -->
