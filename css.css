@@ -12,7 +12,7 @@ nav{
     border-color: black;
     box-shadow: 0 0 10px rgba(255, 236, 226, 0.6);
 }
-li{
+ul li {
     list-style:none;
 }
 li a {
